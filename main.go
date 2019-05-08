@@ -86,7 +86,6 @@ func deleteBook(w http.ResponseWriter, r *http.Request) {
 func main() {
 	router := mux.NewRouter()
 
-	//TODO inser books
 	books = append(books, Book{ID: "1", Isbn: "44321121", Title: "The Book", Price: "17.99", Author: &Author{Firstname: "Jean", Lastname: "Rauwers"}})
 	books = append(books, Book{ID: "2", Isbn: "44321122", Title: "The Book II", Price: "21.00", Author: &Author{Firstname: "Juliana", Lastname: "Rauwers"}})
 	books = append(books, Book{ID: "3", Isbn: "44321123", Title: "The Book III", Price: "22.00", Author: &Author{Firstname: "Frank", Lastname: "Rauwers"}})
